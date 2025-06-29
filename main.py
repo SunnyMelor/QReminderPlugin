@@ -556,7 +556,7 @@ class ReminderPlugin(BasePlugin):
     async def _send_reminder_message(self, reminder_data: Dict):
         """发送提醒消息（改进版）"""
         try:
-            message_content = f"⏰ 提醒：{reminder_data['content']}"
+            message_content = f"😈 {reminder_data['content']}"
             
             # 获取可用的适配器
             adapter = await self._get_available_adapter()
